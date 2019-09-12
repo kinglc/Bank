@@ -19,9 +19,6 @@
     <view class="delimiter"></view>
     <view class="tele-btn">
       <image bindtap="quryBal" class="btn-img" src="../../images/user_logon/btn.png" mode="scaleToFill"></image>
-      <view class="btn_login">
-        <text>注册账号</text>
-      </view>
+      <button class="weui-btn" type="primary" bindtap='user_regist'>注册账号</button>
     </view>
-
 </view> 

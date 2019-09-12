@@ -73,10 +73,13 @@
     position: relative;
     padding: 20rpx 10rpx 20rpx 14rpx;
     flex-direction: row;
-    /* display: flex; */
 }
 
 .btn_login {
     margin-left: 42%;
     margin-top: -5%;
+}
+
+.weui-btn{
+  width: 80%;
 }

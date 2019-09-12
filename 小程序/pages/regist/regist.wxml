@@ -1,0 +1,56 @@
+<!--pages/regist/regist.wxml-->
+<!--pages/regist/regist.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title"></view>
+  </view>
+  <!--页头-->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="page__bd page__bd_spacing">
+      <view class="userRegist">注册</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入您的姓名" type="text" name="username" bindinput='getUserName' />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">号码</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入您的手机号" type="text" name="phone" bindinput='getPhoneNo' />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">登录密码</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="password" placeholder="请输入至少六位密码" name="password" bindinput='getUserPassword' />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">确认密码</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="password" bindinput='getEnsurePassword' name="ensurePassword" placeholder="请输入确认密码" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-label sex_choose"></view>
+        <!--button-->
+        <!--mask-->
+        <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+        <!--content-->
+      </view>
+      <button class="weui-btn btn1" type="primary" formType="submit">确认注册</button>
+      <button class="weui-btn" type="primary" bindtap="goLogin">返回登录</button>
+    </view>
+  </form>
+</view>

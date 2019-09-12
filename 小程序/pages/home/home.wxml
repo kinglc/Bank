@@ -1,10 +1,5 @@
 <!--pages/home/home.wxml-->
 
-<!-- 页面背景 -->
-<view class="bg-home">
-  <image class="bg-image-home" mode="scaleToFill" src="../../images/bg/bg-2.png"></image>
-</view>
-
 <!-- 广告部分 -->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='true'>
   <swiper-item wx:for="{{imgUrls}}">
@@ -12,7 +7,60 @@
   </swiper-item>
 </swiper>
 
-<button class='limit' hover-class="hover" bindtap='turn' data-url='limit'><image src="../../images/tab/money.png" style="width:75rpx; height:75rpx;"></image> 本月额度</button>
+<!-- <button class='limit' hover-class="hover"><image src="../../images/tab/money.png" style="width:75rpx; height:75rpx;"></image> 本月额度</button>
 <button class='consume' hover-class="hover"><image src="../../images/tab/list.png" style="width:75rpx; height:75rpx;"></image>消费查询</button>
-<button class='integral' hover-class="hover"><image src="../../images/tab/integral.png" style="width:75rpx; height:75rpx;"></image>积分查询</button>
-<button class="camera" hover-class="hover"><image src="../../images/tab/camera.png" style="width:75rpx; height:75rpx;"></image>拍照上传</button>
+<button class='integral' hover-class="hover"><image src="../../images/tab/integral.png" style="width:75rpx; height:75rpx;"></image>积分查询</button> -->
+<!-- <button class="camera" hover-class="hover" bindtap="chooseimage"><image src="../../images/tab/camera.png" style="width:75rpx; height:75rpx;"></image>拍照上传</button> -->
+
+
+<!-- 本月额度部分 -->
+<view id="index"> 
+    <view class="topbj light text-center">
+        <view class="total ">
+            <view class="p num">{{cargoQuantity.num||0}}</view>
+            <view class="p">本月余额</view>
+        </view>
+        <view class="row sub-total row-no-padding">
+            <view class="col">
+                <view class="p">{{cargoQuantity?cargoQuantity.informatenum :0}}</view>
+                <view class="p">总额度</view>
+            </view>
+            <view class="col">
+                <view class="p">{{cargoQuantity?cargoQuantity.goodsnum:0 }}</view>
+                <view class="p">已消费</view>
+            </view>
+        </view>
+    </view>
+    <view style="margin-top: -2.2rem;">
+        <view class="card">
+            <view class="row  light-bg row-center main-list">
+                <navigator url="information" open-type="navigate" class="col border-rb">
+                    <text class="icon iconfont icon-dengjixinxi energized"></text>
+                    <view>
+                        <view class="h5">借贷记录</view>
+                    </view>
+                </navigator>
+                <navigator url="" open-type="navigate" class="col border-b">
+                    <text class="icon iconfont icon-jiedanshouhuo positive"></text>
+                    <view>
+                        <view class="h5">还款记录</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="row  light-bg row-center  main-list">
+                <navigator url="" open-type="navigate" class="col border-r">
+                    <text class="icon iconfont icon-sponsorfill positive"></text>
+                    <view>
+                        <view class="h5">积分商城</view>
+                    </view>
+                </navigator>
+                <navigator url="" open-type="navigate" class="col">
+                    <text class="icon iconfont icon-friendaddfill royal"></text>
+                    <view>
+                        <view class="h5">积分查询</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

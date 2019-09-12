@@ -116,6 +116,11 @@ Page({
                 showCancel: false
             })
         }
+    },
+    user_regist: function() {
+        wx.redirectTo({
+            url: '../regist/regist',
+        })
     }
 
 })
