@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+
+<!-- 页面背景 -->
+<view class="bg-home">
+  <image class="bg-image-home" mode="scaleToFill" src="../../images/bg/bg-2.png"></image>
+</view>
+
+<!-- 广告部分 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='true'>
+  <swiper-item wx:for="{{imgUrls}}">
+    <image src="{{item}}" />
+  </swiper-item>
+</swiper>
+
+<button class='limit' hover-class="hover" bindtap='turn' data-url='limit'><image src="../../images/tab/money.png" style="width:75rpx; height:75rpx;"></image> 本月额度</button>
+<button class='consume' hover-class="hover"><image src="../../images/tab/list.png" style="width:75rpx; height:75rpx;"></image>消费查询</button>
+<button class='integral' hover-class="hover"><image src="../../images/tab/integral.png" style="width:75rpx; height:75rpx;"></image>积分查询</button>
+<button class="camera" hover-class="hover"><image src="../../images/tab/camera.png" style="width:75rpx; height:75rpx;"></image>拍照上传</button>
