@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
 <!--this is git test-->
+<!--显示修改-->
 <!-- 广告部分 -->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='true'>
   <swiper-item wx:for="{{imgUrls}}">
