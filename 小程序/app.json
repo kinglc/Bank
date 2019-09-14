@@ -1,52 +1,51 @@
 {
-    "pages": [
-        "pages/home/home",
-        "pages/editcard/editcard",
-        "pages/recharge/recharge",
-        "pages/shop/shop",
-        "pages/user/user",
-        "pages/shop_user_center/shop_user_center",
-        "pages/regist/regist"
-
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "black"
-    },
-    "tabBar": {
-        "color": "#000",
-        "selectedColor": "#FF4500",
-        "backgroundColor": "#FAEBD7",
-        "position": "bottom",
-        "borderStyle": "black",
-        "list": [{
-                "pagePath": "pages/home/home",
-                "text": "首页",
-                "iconPath": "images/icons/home.png",
-                "selectedIconPath": "images/icons/home_select.png"
-            },
-            {
-                "pagePath": "pages/shop/shop",
-                "text": "消费查询",
-                "iconPath": "images/icons/shop.png",
-                "selectedIconPath": "images/icons/shop_select.png"
-            },
-            {
-              "pagePath": "pages/editcard/editcard",
-              "text": "零钱包",
-              "iconPath": "images/icons/money.png",
-              "selectedIconPath": "images/icons/money_select.png"
-            },
-            {
-                "pagePath": "pages/user/user",
-                "text": "用户中心",
-                "iconPath": "images/icons/user.png",
-                "selectedIconPath": "images/icons/user_select.png"
-            }
-        ]
-    },
-
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/home/home",
+    "pages/editcard/editcard",
+    "pages/recharge/recharge",
+    "pages/shop/shop",
+    "pages/user/user",
+    "pages/shop_user_center/shop_user_center",
+    "pages/regist/regist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#FF4500",
+    "backgroundColor": "#FAEBD7",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home_select.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "消费查询",
+        "iconPath": "images/icons/shop.png",
+        "selectedIconPath": "images/icons/shop_select.png"
+      },
+      {
+        "pagePath": "pages/editcard/editcard",
+        "text": "零钱包",
+        "iconPath": "images/icons/money.png",
+        "selectedIconPath": "images/icons/money_select.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户中心",
+        "iconPath": "images/icons/user.png",
+        "selectedIconPath": "images/icons/user_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }
