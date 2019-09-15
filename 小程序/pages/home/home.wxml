@@ -1,5 +1,11 @@
 <!--pages/home/home.wxml-->
+<<<<<<< HEAD
 
+=======
+<!--this is git test-->
+<!-- this is my git test-->
+<!--显示修改-->
+>>>>>>> 6a1b6ae7b3722469bcb6b57e673d3f0be188f685
 <!-- 广告部分 -->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='true'>
   <swiper-item wx:for="{{imgUrls}}">

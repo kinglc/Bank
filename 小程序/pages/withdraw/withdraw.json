@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD:小程序/pages/withdraw/withdraw.json
   "navigationBarTitleText": "充值",
+=======
+  "navigationBarTitleText": "消费查询",
+>>>>>>> 6a1b6ae7b3722469bcb6b57e673d3f0be188f685:小程序/pages/shop/shop.json
   "navigationBarBackgroundColor": "#D2B48C"
 }

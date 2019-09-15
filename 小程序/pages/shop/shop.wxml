@@ -1,0 +1,28 @@
+<!--pages/shop/shop.wxml-->
+<view class='header'>
+    <view class='pick' style='color:{{filterColor}}'>
+     <picker bindchange="changeFilter" value="{{index}}" range="{{filters}}">
+        筛选▼
+      </picker>
+    </view>
+    <view class='pick' style='color:{{typeColor}}'>
+     <picker bindchange="changeType" value="{{index}}" range="{{types}}">
+        分类▼
+      </picker>
+    </view>
+    <input class='search' placeholder=' 请输入搜索内容' bindinput='inputSearch'></input>
+    <view class='searchbtn' bindtap='search'>搜索</view>
+</view>
+
+<view class='bills'>
+    <view class='bill' wx:for="{{bills}}">
+        <image src='{{item.url}}'></image>
+        <view class='info'>
+          <view class='name'>{{item.name}}</view>
+          <view class='type'>{{item.type}}</view>
+          <view class='date'>{{item.date}}</view>
+        </view>
+        <view wx:if='{{item.cost[0]=="+"}}' class='cost' style='color:red;'>{{item.cost}}</view>
+        <view wx:else class='cost' style='color:black;'>{{item.cost}}</view>
+    </view>
+</view>
