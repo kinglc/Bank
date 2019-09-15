@@ -1,0 +1,82 @@
+/* pages/creidts_record/creidts_record.wxss */
+
+.header{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  color:#909090;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:10px; 
+  background-color: rgb(255, 240, 189);
+  height: 40px;
+}
+
+.pick{
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.search{
+  margin-left: 20px;
+  float: left;
+  height: 15px;
+  border-radius: 15px;
+  border:1px solid #909090;
+}
+
+.searchbtn{
+  float: left;
+  margin-left: 3px;
+}
+
+.bills{
+  position: fixed;
+  /* background-color: rgb(255, 240, 215); */
+  width:100%;
+}
+
+.bill{
+  border-bottom:1px solid #a5a796;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.bill image{
+  width: 30px;
+  height: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.bill .info{
+  width: 60%;
+}
+.bill .name{
+  font-size: 18px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.bill .type{
+  font-size: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.bill .date{
+  font-size: 14px;
+  color: #999999;
+}
+.bill .cost{
+  font-size: 18px;
+  float: right;
+}
+
+.return_money {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0px 0px 20px #ddd;
+  background-color: rgb(206, 190, 103);
+}

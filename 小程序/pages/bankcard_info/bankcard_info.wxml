@@ -1,0 +1,9 @@
+<!--pages/bankcard_info/bankcard_info.wxml-->
+
+
+
+
+
+    <view class="padding light-bg bottom-0">
+        <button class="positive-bg light " formType="submit" bindtap="add_bankcard">添加银行卡</button>
+    </view>

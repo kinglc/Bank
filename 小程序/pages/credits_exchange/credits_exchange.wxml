@@ -1,0 +1,29 @@
+<!--pages/credits_exchange/credits_exchange.wxml-->
+
+<view class='header'>
+  <!-- <text>当前日期：{{date}}</text> -->
+  <view bindtap="showDatePicker" >选择日期▼</view>
+  <date-picker
+      id="date-picker"
+      value="{{datePickerValue}}" 
+      isShow="{{datePickerIsShow}}"
+      bindsureclick="datePickerOnSureClick"
+      bindcancelclick="datePickerOnCancelClick" />
+    <view class='pick' style='color:{{typeColor}}'>
+    <picker bindchange="changeType" value="{{index}}" range="{{types}}">
+      类型▼
+    </picker>
+  </view>
+</view>
+
+<view class='bills'>
+    <view class='bill' wx:for="{{bills}}">
+        <image src='{{item.url}}'></image>
+        <view class='info'>
+          <view class='type'>{{item.type}}</view>
+          <view class='date'>{{item.date}}</view>
+        </view>
+        <view wx:if='{{item.cost[0]=="-"}}' class='cost' style='color:red;'>{{item.cost}}</view>
+        <view wx:else class='cost' style='color:black;'>{{item.cost}}</view>
+    </view>
+</view>

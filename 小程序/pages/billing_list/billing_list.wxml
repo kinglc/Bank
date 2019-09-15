@@ -1,0 +1,23 @@
+<!--pages/billing_list/billing_list.wxml-->
+
+<text>当前日期：{{date}}</text>
+<view bindtap="showDatePicker" >选择日期</view>
+<date-picker
+    id="date-picker"
+    value="{{datePickerValue}}" 
+    isShow="{{datePickerIsShow}}"
+    bindsureclick="datePickerOnSureClick"
+    bindcancelclick="datePickerOnCancelClick" />
+
+
+<!-- 列表 -->
+<block wx:for="{{dataList}}" wx:key="item">
+ <view class='item-container'>
+  <!-- <text class='item-name'>上传人：{{item.name}}</text> -->
+  <text class='item-name'>上传时间：{{item.time}}</text>
+  <image class='img' src='{{item.imgUrl}}'></image>
+ </view>
+</block>
+
+<image class="add_record" src="../../images/billing_list/camera.png" bindtap="publish_record"></image>
+

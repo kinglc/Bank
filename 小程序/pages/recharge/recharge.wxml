@@ -22,8 +22,6 @@
     </view>
 
     <view class="padding light-bg bottom-0">
-        <button class="positive-bg light "
-                formType="submit">充值
-        </button>
+        <button class="positive-bg light" formType="submit">确认充值</button>
     </view>
 </form>

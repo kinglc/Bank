@@ -1,0 +1,5 @@
+<!--pages/credit_info/credit_info.wxml-->
+
+<view class="padding light-bg bottom-0">
+    <button class="positive-bg light " formType="submit" bindtap="add_credit">添加信用卡</button>
+</view>

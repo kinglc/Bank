@@ -89,3 +89,9 @@ view, text {
     color: #aaa;
     font-size: 14px;
 }
+
+.direction_right{
+  width: 20px;
+  height: 20px;
+  float: right;
+}

@@ -1,18 +1,11 @@
 <!--pages/home/home.wxml-->
-<!--this is git test-->
-<!--显示修改-->
+
 <!-- 广告部分 -->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='true'>
   <swiper-item wx:for="{{imgUrls}}">
     <image src="{{item}}" />
   </swiper-item>
 </swiper>
-
-<!-- <button class='limit' hover-class="hover"><image src="../../images/tab/money.png" style="width:75rpx; height:75rpx;"></image> 本月额度</button>
-<button class='consume' hover-class="hover"><image src="../../images/tab/list.png" style="width:75rpx; height:75rpx;"></image>消费查询</button>
-<button class='integral' hover-class="hover"><image src="../../images/tab/integral.png" style="width:75rpx; height:75rpx;"></image>积分查询</button> -->
-<!-- <button class="camera" hover-class="hover" bindtap="chooseimage"><image src="../../images/tab/camera.png" style="width:75rpx; height:75rpx;"></image>拍照上传</button> -->
-
 
 <!-- 本月额度部分 -->
 <view id="index"> 
@@ -35,33 +28,33 @@
     <view style="margin-top: -2.2rem;">
         <view class="card">
             <view class="row  light-bg row-center main-list">
-                <navigator url="information" open-type="navigate" class="col border-rb">
-                    <text class="icon iconfont icon-dengjixinxi energized"></text>
+                <navigator url="../billing_list/billing_list" open-type="navigate" class="col border-rb">
+                    <image class="direction_down" src="../../images/direction/down.png"></image>
                     <view>
-                        <view class="h5">借贷记录</view>
+                        <view class="h5">账单记录</view>
                     </view>
                 </navigator>
                 <navigator url="" open-type="navigate" class="col border-b">
-                    <text class="icon iconfont icon-jiedanshouhuo positive"></text>
+                    <image class="direction_down" src="../../images/direction/down.png"></image>
                     <view>
-                        <view class="h5">还款记录</view>
+                        <view class="h5">积分换购</view>
                     </view>
                 </navigator>
             </view>
             <view class="row  light-bg row-center  main-list">
-                <navigator url="" open-type="navigate" class="col border-r">
-                    <text class="icon iconfont icon-sponsorfill positive"></text>
+                <navigator url="../creidts_record/creidts_record" open-type="navigate" class="col">
+                    <image class="direction_down" src="../../images/direction/down.png"></image>
                     <view>
-                        <view class="h5">积分商城</view>
+                        <view class="h5">借还款记录</view>
                     </view>
                 </navigator>
-                <navigator url="" open-type="navigate" class="col">
-                    <text class="icon iconfont icon-friendaddfill royal"></text>
+                <!-- <navigator url="" open-type="navigate" class="col">
+                    <image class="direction_down" src="../../images/direction/down.png"></image>
                     <view>
-                        <view class="h5">积分查询</view>
+                        <view class="h5">积分兑换</view>
                     </view>
-                </navigator>
-            </view>
+                </navigator>-->
+            </view> 
         </view>
     </view>
 </view>

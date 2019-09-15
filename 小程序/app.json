@@ -3,18 +3,32 @@
         "pages/home/home",
         "pages/editcard/editcard",
         "pages/recharge/recharge",
-        "pages/shop/shop",
+        "pages/consume_check/consume_check",
         "pages/user/user",
-        "pages/shop_user_center/shop_user_center",
+        "pages/personal_info/personal_info",
+        "pages/insure_info/insure_info",
+        "pages/credit_info/credit_info",
+        "pages/bankcard_info/bankcard_info",
+        "pages/add_bankcard/add_bankcard",
+        "pages/add_credit/add_credite",
+        "pages/withdraw/withdraw",
+        "pages/billing_records/billing_records",
+        "pages/credits_exchange/credits_exchange",
+        "pages/feedback/feedback",
+        "pages/creidts_record/creidts_record",
+        "pages/billing_list/billing_list",
+        "pages/return_money/return_money",
+        "components/date-picker/date-picker",
         "pages/regist/regist"
-
     ],
+
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "WeChat",
         "navigationBarTextStyle": "black"
     },
+
     "tabBar": {
         "color": "#000",
         "selectedColor": "#FF4500",
@@ -28,7 +42,7 @@
                 "selectedIconPath": "images/icons/home_select.png"
             },
             {
-                "pagePath": "pages/shop/shop",
+                "pagePath": "pages/consume_check/consume_check",
                 "text": "消费查询",
                 "iconPath": "images/icons/shop.png",
                 "selectedIconPath": "images/icons/shop_select.png"

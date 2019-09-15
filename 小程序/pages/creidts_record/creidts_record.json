@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "借还款记录",
+  "navigationBarBackgroundColor": "#D2B48C",
+    "usingComponents": {
+      "date-picker": "../../components/date-picker/date-picker"
+    }
+}

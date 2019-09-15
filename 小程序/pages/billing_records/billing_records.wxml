@@ -1,0 +1,4 @@
+<!--pages/billing_records/billing_records.wxml-->
+
+<button class="upload_pic" bindtap="upload_picture">上传图片</button>
+<image class="billing_pic" src="{{imgUrl}}"></image>

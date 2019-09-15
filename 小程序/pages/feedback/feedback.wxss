@@ -1,0 +1,34 @@
+/* pages/feedback/feedback.wxss */
+
+page{
+  background-color: rgb(230, 233, 212);
+}
+
+.desc {
+    border: 2px solid rgb(147, 148, 77);
+    width: auto;
+    margin-top: 2rem;
+}
+
+.textarea_back{
+    background-color: white;
+    border-radius: 20px;
+    height: 10rem;
+}
+
+.border {
+    padding:5px 15px;
+}
+
+.marTop {
+  margin-top:15px;
+}
+
+.marUpTop{
+  margin-top: 20px;
+}
+
+.layout-column {
+    display:flex;
+    flex-direction: column;
+}

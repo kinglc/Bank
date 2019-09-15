@@ -1,0 +1,17 @@
+/* pages/bankcard_info/bankcard_info.wxss */
+
+page{
+  background-color: rgb(231, 223, 188);
+}
+
+.bottom-0 {
+    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -10px 20px rgba(124, 119, 119, 0.459);
+}
+
+.positive-bg{
+    background-color: rgb(209, 189, 98);
+}

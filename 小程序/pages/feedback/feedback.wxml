@@ -1,0 +1,14 @@
+<!--pages/feedback/feedback.wxml-->
+
+<form bindsubmit="formSubmit" report-submit>
+  <view class="layout-column marUpTop">
+    <textarea class="desc border textarea_back" placeholder="请描述反馈意见" name="content" maxlength="1000">
+    </textarea>
+    <view class="marTop border">
+      <button type="primary" size="default" style="background-color: rgb(147, 148, 77);" formType="submit" disabled='{{disableBtn}}'>提交</button>
+    </view>
+    <modal hidden="{{formMsgHidden}}" title="提示" confirm-text="去完善" no-cancel="true" bindcancel="cancel" bindconfirm="hiddenFromMsg">
+    意见不能为空
+    </modal>
+  </view>
+</form>

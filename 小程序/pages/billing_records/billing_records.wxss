@@ -1,0 +1,21 @@
+/* pages/billing_records/billing_records.wxss */
+
+page{
+  background-color: rgb(232, 236, 204);
+}
+
+.upload_pic{
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  border-radius: 20px;
+  top: 35px;
+  left: 20%;
+  background-color: rgb(151, 155, 105);
+  box-shadow: 0 10px 20px rgba(73, 72, 72, 0.377);
+}
+
+.billing_pic{
+  position: fixed;
+  bottom: 15%;
+}

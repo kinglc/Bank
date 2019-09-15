@@ -23,29 +23,7 @@ swiper-item image {
     height: 100%;
 }
 
-/* .consume,
-.limit,
-.camera,
-.integral {
-    margin-top: 5%;
-    width: 80%;
-    background-color: rgb(252, 126, 67);
-    color: white;
-    border-radius: 95rpx;
-}
-
-.limit {
-    margin-top: 5%;
-}
-
-.hover {
-    background: rgba(253, 140, 92, 0.897);
-} */
-
-
-
 /* 额度部分 */
-
 #index {
     width: 100%;
     overflow: hidden;
@@ -215,11 +193,11 @@ view, text {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-jiedanshouhuo:before { content: "\e65a"; }
-.icon-dengjixinxi:before { content: "\e66d"; }
-.icon-sponsorfill:before { content: "\e77c"; }
-.icon-friendaddfill:before { content: "\e6c9"; }
-
 .royal, a.royal {
     color: #886aea;
+}
+
+.direction_down{
+  width: 30px;
+  height: 30px;
 }
